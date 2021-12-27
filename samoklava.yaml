@@ -9,7 +9,7 @@ points:
       choc_hotswap:
         type: choc
         params:
-          hotswap: true
+          hotswap: false 
           reverse: true
           keycaps: true
         nets:
@@ -84,7 +84,7 @@ points:
         far:
           spread: kx
           rotate: -15
-          origin: [-0.5 kx, -0.5 ky]
+          origin: [-0.75 kx, -0.75 ky]
           key:
             column_net: P14
       rows:
