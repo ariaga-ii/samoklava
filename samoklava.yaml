@@ -82,7 +82,7 @@ points:
           key:
             column_net: P15
         far:
-          spread: kx
+          spread: kx + 4
           rotate: -15
           origin: [-0.5 kx, -0.5 ky]
           stagger: 4.5 
