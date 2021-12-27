@@ -84,7 +84,8 @@ points:
         far:
           spread: kx
           rotate: -15
-          origin: [-0.75 kx, -0.75 ky]
+          origin: [-0.5 kx, -0.5 ky]
+          shift: [0.5kx, -0.5ky]
           key:
             column_net: P14
       rows:
