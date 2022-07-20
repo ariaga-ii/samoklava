@@ -9,7 +9,7 @@ points:
       choc_hotswap:
         type: choc
         params:
-          hotswap: false
+          hotswap: true
           reverse: true
           keycaps: true
         nets:
@@ -252,29 +252,29 @@ outlines:
         name: mounting_holes
         operation: subtract
 pcbs:
-  # top_plate:
-  #   # include JLCJLCJLCJLC text somewhere
-  #   include_keys: false
-  #   outlines:
-  #     edge:
-  #       outline: plate
-  #       layer: Edge.Cuts
-  #   footprints:
-  #     jlc_order_number:
-  #       type: text
-  #       anchor:
-  #         ref:
-  #           - matrix_ring_home
-  #         shift: [-0.25 kx, 0.5 ky]
-  #       params:
-  #         text: "JLCJLCJLCJLC"
-  #         justify: left
-  # bottom_plate:
-  #   include_keys: false
-  #   outlines:
-  #     edge:
-  #       outline: bottom_outline
-  #       layer: Edge.Cuts
+  top_plate:
+    # include JLCJLCJLCJLC text somewhere
+    include_keys: false
+    outlines:
+      edge:
+        outline: plate
+        layer: Edge.Cuts
+    footprints:
+      jlc_order_number:
+        type: text
+        anchor:
+          ref:
+            - matrix_ring_home
+          shift: [-0.25 kx, 0.5 ky]
+        params:
+          text: "JLCJLCJLCJLC"
+          justify: left
+  bottom_plate:
+    include_keys: false
+    outlines:
+      edge:
+        outline: bottom_outline
+        layer: Edge.Cuts
   board:
     outlines:
       edge:
@@ -443,3 +443,4 @@ pcbs:
           layer: B.SilkS
           text: "samoklava v0.1\\nby soundmonster"
           justify: right mirror
+
